@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Here are pair of functions makeCacheMatrix and cacheSolve, that cache the inverse of a matrix.
+## If the inverse has already been calculated (and the matrix has not changed), then the cachesolve should retrieve the inverse from the cache.
 
-## Write a short comment describing this function
+## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function computes the inverse of the special "matrix" returned by makeCacheMatrix function above.
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
